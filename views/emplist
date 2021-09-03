@@ -1,0 +1,16 @@
+doctype html 
+html
+   head
+      title helo 
+   body 
+      h1 lets start the game 
+      table(border="2" cellpadding="10")
+          thead  
+             th EMP_NAME 
+             th EMAIL 
+             th MOBILE
+          each val in allstudents 
+               tr   
+                   td #{val.emp_name}
+                   td #{val.email}
+                   td #{val.mob}
